@@ -1,0 +1,9 @@
+@import "tailwindcss";
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+.bottomBar {
+  padding: 0 20px !important;
+}
