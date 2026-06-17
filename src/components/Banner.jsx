@@ -15,7 +15,7 @@ function Banner() {
       {banners.length > 0 && (
         <img
           className="object-cover w-full rounded-3xl"
-          src={banners[1].img}
+          src={banners[0].img}
           key={banners[0].id}
           alt=""
         />
