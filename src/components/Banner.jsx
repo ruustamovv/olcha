@@ -32,7 +32,7 @@ function Banner() {
         onClick={() => {
           goBack()
         }}
-        className="flex absolute cursor-pointer left-2 top-1/2 -translate-y-1/2"
+        className="flex absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 text-white"
       >
         left
       </button>
@@ -47,7 +47,7 @@ function Banner() {
         onClick={() => {
           goNext()
         }}
-        className="flex absolute cursor-pointer right-2 top-1/2 -translate-y-1/2"
+        className="flex absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 text-white"
       >
         right
       </button>
