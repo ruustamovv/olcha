@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react"
+import LeftIcon from "../assets/icons/LeftIcon"
+import RightIcon from "../assets/icons/RightIcon"
 
 function Banner() {
   const [banners, setBanners] = useState([])
@@ -11,45 +13,48 @@ function Banner() {
   }, [])
 
   const goNext = () => {
-    if (currentIndex === banners.length - 1) {
-      setCurrentIndex(0)
-    } else {
-      setCurrentIndex(currentIndex + 1)
-    }
+    setCurrentIndex(currentIndex === banners.length - 1 ? 0 : currentIndex + 1)
   }
 
   const goBack = () => {
-    if (currentIndex === 0) {
-      setCurrentIndex(banners.length - 1)
-    } else {
-      setCurrentIndex(currentIndex - 1)
-    }
+    setCurrentIndex(currentIndex === 0 ? banners.length - 1 : currentIndex - 1)
   }
 
   return (
-    <div className="relative max-lg:aspect-10/3 aspect-12/3 flex overflow-hidden rounded-3xl">
+    <div className="relative overflow-hidden max-lg:aspect-10/3 flex aspect-12/3 rounded-3xl">
+      <div
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {banners.map((banner) => {
+          return (
+            <div className="shrink-0 w-full" key={banner.id}>
+              <img
+                className="object-cover h-full w-full rounded-3xl"
+                src={banner.img}
+                alt=""
+              />
+            </div>
+          )
+        })}
+      </div>
+
       <button
         onClick={() => {
           goBack()
         }}
-        className="flex absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 text-white"
+        className="group rounded-3xl absolute h-full transition-all duration-400 ease-in-out hover:bg-black/5 hover:backdrop-blur-xs cursor-pointer left-0 w-20 flex justify-center items-center  text-white"
       >
-        left
+        <LeftIcon />
       </button>
-      {banners.length > 0 && (
-        <img
-          className="object-cover w-full rounded-3xl"
-          src={banners[currentIndex].img}
-          alt=""
-        />
-      )}
+
       <button
         onClick={() => {
           goNext()
         }}
-        className="flex absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 text-white"
+        className="group rounded-3xl absolute h-full transition-all duration-400 ease-in-out hover:bg-black/5 hover:backdrop-blur-xs cursor-pointer right-0 w-20 flex justify-center items-center text-white"
       >
-        right
+        <RightIcon />
       </button>
     </div>
   )
