@@ -19,7 +19,7 @@ export const routes = [
     element: <Favouritespage />,
   },
   {
-    path: "/product",
+    path: "/product/:id",
     element: <Productpage />,
   },
   {

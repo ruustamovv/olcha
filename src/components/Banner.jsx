@@ -8,7 +8,7 @@ function Banner() {
 
   useEffect(() => {
     fetch("https://6c17cdd241beda19.mokky.dev/banners").then((request) =>
-      request.json().then((response) => setBanners(response)),
+      request.json().then((response) => setBanners(response))
     )
   }, [])
 
@@ -28,9 +28,9 @@ function Banner() {
       >
         {banners.map((banner) => {
           return (
-            <div className="shrink-0 w-full" key={banner.id}>
+            <div className="shrink-0 w-full rounded-3xl" key={banner.id}>
               <img
-                className="object-cover h-full w-full rounded-3xl"
+                className="object-cover h-full w-full"
                 src={banner.img}
                 alt=""
               />
