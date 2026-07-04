@@ -65,7 +65,7 @@ function Productpage() {
           <div className="flex flex-col w-1/4">
             {product.colors.map((color) => (
               <div className="flex justify-between gap-2" key={color.id}>
-                {/* <p>цвет: {color.colorName}</p> */}
+                <p>цвет: {color.colorName}</p>
                 <div className="flex justify-between gap-4">
                   <img
                     className="w-20 border-2 p-3 rounded-lg"
