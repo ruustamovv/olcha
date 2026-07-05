@@ -8,8 +8,8 @@ function Homepage() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    fetch("https://6c17cdd241beda19.mokky.dev/products").then((request) =>
-      request.json().then((response) => setProducts(response)),
+    fetch("http://localhost:3000/products").then((request) =>
+      request.json().then((response) => setProducts(response))
     )
   }, [])
 
@@ -19,10 +19,10 @@ function Homepage() {
       <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10 gap-5">
         {products.map((product) => {
           const discount = Math.round(
-            ((product.old_price - product.price) / product.old_price) * 100,
+            ((product.old_price - product.price) / product.old_price) * 100
           )
           return (
-            <Link to={`/product/${product.id}`} key={product.id}>
+            <Link to={`/product/${product.id}`} key={product._id}>
               <div className="cursor-pointer hover:scale-101 hover:shadow-2xl p-2 transition-all duration-400 ease-in-out flex flex-col h-full rounded-2xl gap-2">
                 <div className="relative flex items-center h-full w-full justify-center rounded-2xl bg-gray-100 p-10 ">
                   <img
@@ -43,7 +43,7 @@ function Homepage() {
                         className:
                           "absolute text-black px-2 text-sm font-semibold rounded-tr-2xl top-0 right-0 bg-yellow-300 rounded-lg",
                       },
-                      "HOT",
+                      "HOT"
                     )
                   ) : (
                     <div
@@ -73,7 +73,7 @@ function Homepage() {
                 </p>
                 <p className="bg-yellow-400 rounded-lg w-fit font-medium px-2">
                   {Math.round((product.price / 12) * 1.2).toLocaleString(
-                    "ru-Ru",
+                    "ru-Ru"
                   )}{" "}
                   сум х12 мес
                 </p>
