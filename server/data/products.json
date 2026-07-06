@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Apple iPhone 16 Pro Max 256GB Natural Titanium",
+    "unique_name": "apple-iphone-16-pro-max-256gb-natural-titanium",
+    "image": [
+      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTfgjrQcqElbVAQ6khlrEcFe8IL0MdjDK49LDexqJ5C6IGIdsfLlG_xyE5QoV6-uy-MsE2fj2OXfb_4ciG1r-2KSgCZYs5xEdUI0pqRZoWb9bzJLzVp7QlQDPV8aW_mw3NVU2QPeVmuSVs&usqp=CAc",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1U68lRRORCno7Xj-DjAU-a9E-bjeaOZ7IQQlYBP-3Ow&s=10"
+    ],
+    "colors": [
+      {
+        "id": 1,
+        "colorName": "silver",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_hEVep3oXmY2GYBmmObD1EZwgIt1tqDFhT56LSir6uZ-GcMkQVytspSaUBfLtEJDXdaPfMJZq_LBdP9Gi-pNXOZOpvXU7tDc1VsrX1cF9mPZUaWD4Oideau2JFVKfOzSgVBytjA&usqp=CAc"
+      },
+      {
+        "id": 2,
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxaswcVP4dAc0PxlkrgWjVuBsMcUg9-WJjGD4uFlYKKYgzpfjSwGShP9W-EEEWUoNgSQt_Qr5Jhsr6d9zGRc9dSjI2tfaoUbK2DlUau0rAgmjg0eKSQfdjpe1YWT9W_9Hxk9h6_K0&usqp=CAc"
+      }
+    ],
+    "old_price": 21999000,
+    "price": 17499000,
+    "brand": "Apple",
+    "memory": "8/256gb",
+    "rating": 4.9,
+    "reviews": 245
+  },
+  {
+    "name": "Xiaomi 15 Ultra 16GB / 512GB White",
+    "unique_name": "xiaomi-15-ultra-16gb-512gb-white",
+    "image": "https://avatars.mds.yandex.net/get-mpic/20276372/2a0000019e4582b6e5913017bb9c09116e0c/orig",
+    "old_price": 14999000,
+    "price": 13699999,
+    "brand": "Xiaomi",
+    "memory": "8/256gb",
+    "rating": 4.7,
+    "reviews": 87
+  },
+  {
+    "name": "Infinix GT 30 Pro 5G 12GB / 256GB",
+    "unique_name": "infinix-gt-30-pro-5g-12gb-256gb",
+    "image": "https://s3.fortifai.uz/shop/moderation/partner-1316/1778161644-1752166415-d0ndsngn274j5scntd40.jpg",
+    "old_price": 7499000,
+    "price": 5499000,
+    "brand": "Infinix",
+    "memory": "8/256gb",
+    "rating": 4.6,
+    "reviews": 56
+  },
+  {
+    "name": "Redmi Note 14 Pro Plus 5G 12GB / 512GB",
+    "unique_name": "redmi-note-14-pro-plus-5g-12gb-512gb",
+    "image": "https://mini-io-api.texnomart.uz/catalog/product/3582/358250/208748/936726c3-6a03-4128-9647-645bd4eaf402.webp",
+    "old_price": 6999000,
+    "price": 6499000,
+    "brand": "Xiaomi",
+    "memory": "8/256gb",
+    "rating": 4.5,
+    "reviews": 102
+  },
+  {
+    "name": "Google Pixel 9 Pro XL 256GB Obsidian",
+    "unique_name": "google-pixel-9-pro-xl-256gb-obsidian",
+    "image": "https://avatars.mds.yandex.net/get-mpic/10255013/2a00000194f10917d702581ac47b941efa0f/orig",
+    "old_price": 16999000,
+    "price": 12999000,
+    "brand": "Google",
+    "memory": "8/256gb",
+    "rating": 4.8,
+    "reviews": 134
+  },
+  {
+    "name": "OnePlus 13 16GB / 512GB Black Eclipse",
+    "unique_name": "oneplus-13-16gb-512gb-black-eclipse",
+    "image": "https://static.insales-cdn.com/r/-HxKA9aHokc/rs:fit:1000:0:1/q:100/plain/images/products/1/710/955679430/141722_photos_0_457038174.jpg@jpg",
+    "old_price": 12999000,
+    "price": 12699000,
+    "brand": "OnePlus",
+    "memory": "8/256gb",
+    "rating": 4.7,
+    "reviews": 76
+  }
+]

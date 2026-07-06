@@ -7,7 +7,7 @@ function Productpage() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   useEffect(() => {
-    fetch(`https://6c17cdd241beda19.mokky.dev/products/${id}`).then((request) =>
+    fetch(`http://localhost:3000/products/${id}`).then((request) =>
       request.json().then((response) => {
         setProduct(response)
         setSelectedImage(response.image[0])

@@ -22,7 +22,7 @@ function Homepage() {
             ((product.old_price - product.price) / product.old_price) * 100
           )
           return (
-            <Link to={`/product/${product.id}`} key={product._id}>
+            <Link to={`/product/${product.unique_name}`} key={product._id}>
               <div className="cursor-pointer hover:scale-101 hover:shadow-2xl p-2 transition-all duration-400 ease-in-out flex flex-col h-full rounded-2xl gap-2">
                 <div className="relative flex items-center h-full w-full justify-center rounded-2xl bg-gray-100 p-10 ">
                   <img

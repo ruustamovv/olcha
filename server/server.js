@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
@@ -7,9 +9,9 @@ app.use(cors())
 app.use(express.json())
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/olcha")
-  .then(() => console.log("MongoDb ulandi"))
-  .catch((error) => console.log(error))
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB Atlas ulandi"))
+  .catch((err) => console.log(err))
 
 const Product = require("./models/Product")
 
@@ -23,6 +25,12 @@ app.get("/products", async (req, res) => {
   res.json(products)
 })
 
-app.listen(3000, () => {
-  console.log("Server 3000-portda ishlayapti")
+app.get("/products/:unique_name", async (req, res) => {
+  const product = await Product.findOne({
+    unique_name: req.params.unique_name,
+  })
+
+  res.json(product)
 })
+
+app.listen(3000)

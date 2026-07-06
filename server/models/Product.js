@@ -5,14 +5,22 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  unique_name: {
+    type: String,
+    required: true,
+  },
   image: {
-    type: String,
-    required: false,
+    type: [String],
+    default: [],
+    required: true,
   },
-  colors: {
-    type: String,
-    required: false,
-  },
+  colors: [
+    {
+      id: Number,
+      colorName: String,
+      colorImage: String,
+    },
+  ],
   old_price: {
     type: Number,
     required: true,
@@ -21,6 +29,10 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  brand: String,
+  memory: String,
+  rating: Number,
+  reviews: Number,
 })
 
 module.exports = mongoose.model("Product", productSchema)
