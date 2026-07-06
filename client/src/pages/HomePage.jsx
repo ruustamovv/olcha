@@ -8,7 +8,7 @@ function Homepage() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/products").then((request) =>
+    fetch("https://olcha-api.onrender.com/products").then((request) =>
       request.json().then((response) => setProducts(response))
     )
   }, [])
