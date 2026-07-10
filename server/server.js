@@ -1,12 +1,12 @@
-require("dotenv").config()
-
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 
+require("dotenv").config()
+
 const app = express()
-app.use(cors())
 app.use(express.json())
+app.use(cors())
 
 mongoose
   .connect(process.env.MONGO_URI)
@@ -14,10 +14,11 @@ mongoose
   .catch((err) => console.log(err))
 
 const Product = require("./models/Product")
+const Banner = require("./models/Banner")
 
 app.post("/products", async (req, res) => {
-  const product = await Product.create(req.body)
-  res.json(product)
+  const products = await Product.create(req.body)
+  res.json(products)
 })
 
 app.get("/products", async (req, res) => {
@@ -25,12 +26,21 @@ app.get("/products", async (req, res) => {
   res.json(products)
 })
 
+app.post("/banners", async (req, res) => {
+  const banners = await Banner.create(req.body)
+  res.json(banners)
+})
+
+app.get("/banners", async (req, res) => {
+  const banners = await Banner.find()
+  res.json(banners)
+})
+
 app.get("/products/:unique_name", async (req, res) => {
-  const product = await Product.findOne({
+  const products = await Product.findOne({
     unique_name: req.params.unique_name,
   })
-
-  res.json(product)
+  res.json(products)
 })
 
 const PORT = process.env.PORT || 3000
