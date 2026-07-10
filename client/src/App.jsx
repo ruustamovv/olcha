@@ -1,4 +1,3 @@
-import React from "react"
 import { Route, Routes } from "react-router"
 import { routes } from "./routes/routes"
 import Header from "./components/Header"

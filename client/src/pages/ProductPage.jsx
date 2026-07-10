@@ -11,7 +11,7 @@ function Productpage() {
       request.json().then((response) => {
         setProduct(response)
         setSelectedImage(response.image[0])
-      })
+      }),
     )
   }, [id])
 
@@ -40,25 +40,25 @@ function Productpage() {
         </div>
 
         <div className="flex justify-between gap-2 mt-10 max-lg:flex-col max-lg:w-full">
-          <div className="flex items-center gap-4 w-1/3">
+          <div className="flex items-center gap-4 w-3/7">
             <div className="flex flex-col gap-2">
               {product.image.map((img, index) => (
                 <img
                   onClick={() => setSelectedImage(img)}
-                  className={`object-contain w-20 h-20 cursor-pointer rounded-xl border-2 px-2 py-1 ${
+                  className={`object-contain h-20 cursor-pointer rounded-xl border-2 px-2 py-1 ${
                     selectedImage === img ? "border-red-600" : "border-black"
                   }`}
                   src={img}
                   key={index}
-                  alt=""
+                  alt={product.name}
                 />
               ))}
             </div>
-            <div className="bg-gray-200 w-full h-full rounded-2xl ">
+            <div className="bg-gray-200 w-full h-120 rounded-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={selectedImage}
-                className="w-full h-full p-10 object-contain"
-                alt=""
+                className="w-full h-full p-15 object-contain"
+                alt={product.name}
               />
             </div>
           </div>
