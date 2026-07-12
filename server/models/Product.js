@@ -30,9 +30,9 @@ const productSchema = new mongoose.Schema({
     required: true,
   },
   brand: String,
+  type: String,
   memory: String,
   rating: Number,
-  reviews: Number,
 })
 
 module.exports = mongoose.model("Product", productSchema)

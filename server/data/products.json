@@ -21,7 +21,7 @@
     "brand": "Apple",
     "type": "Phones",
     "memory": "8/256gb",
-    "rating": 20
+    "rating": 22
   },
   {
     "name": "Xiaomi 15 Ultra 16GB / 512GB White",
@@ -41,9 +41,9 @@
     "old_price": 7499000,
     "price": 5499000,
     "brand": "Infinix",
-    "type": "Phones",
+    "type": "tvs",
     "memory": "8/256gb",
-    "rating": null
+    "rating": 23
   },
   {
     "name": "Redmi Note 14 Pro Plus 5G 12GB / 512GB",
@@ -54,7 +54,7 @@
     "brand": "Xiaomi",
     "type": "Phones",
     "memory": "8/256gb",
-    "rating": null
+    "rating": 34
   },
   {
     "name": "Google Pixel 9 Pro XL 256GB Obsidian",
@@ -65,7 +65,7 @@
     "brand": "Google",
     "type": "Phones",
     "memory": "8/256gb",
-    "rating": null
+    "rating": 1
   },
   {
     "name": "OnePlus 13 16GB / 512GB Black Eclipse",
@@ -76,6 +76,6 @@
     "brand": "OnePlus",
     "type": "Phones",
     "memory": "8/256gb",
-    "rating": null
+    "rating": 13
   }
 ]

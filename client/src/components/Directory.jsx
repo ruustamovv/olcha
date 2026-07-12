@@ -59,9 +59,9 @@ function Directory() {
           }
         `}
       >
-        {categories.map((category) => (
+        {categories.map((category, index) => (
           <button
-            key={category}
+            key={index}
             onClick={() => {
               setSelectedCategory(category)
               setShowCategory(false)
