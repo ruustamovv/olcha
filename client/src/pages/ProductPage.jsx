@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react"
-import { useParams } from "react-router"
+import { useEffect, useState } from "react"
+import { Link, useParams } from "react-router"
 
 function Productpage() {
   const [product, setProduct] = useState(null)
   const { id } = useParams()
   const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedColor, setSelectedColor] = useState(0)
+  const [selectedMemory, setSelectedMemory] = useState(0)
 
   useEffect(() => {
     fetch(`https://olcha-api.onrender.com/products/${id}`).then((request) =>
@@ -25,12 +27,27 @@ function Productpage() {
     return (
       <section>
         <div className="flex flex-col gap-10 justify-between">
-          <div>
-            <p>Главная / Смартфоны,телефоны / смартфоны</p>
+          <div className="text-sm text-gray-500 flex gap-2 flex-wrap">
+            <Link to="/" className="hover:text-red-600">
+              Главная
+            </Link>
+
+            <span>/</span>
+
+            <Link className="hover:text-red-600">{product.type}</Link>
+
+            <span>/</span>
+
+            <span className="text-black">{product.name}</span>
           </div>
-          <p className="text-4xl font-bold ">{product.name}</p>
+
+          <p className="text-4xl font-bold">{product.name}</p>
+
           <div className="flex justify-between">
-            <div>отзывы</div>
+            <div className="flex items-center gap-5 mt-6">
+              <div className="text-red-600 text-2xl">★★★★★</div>
+              <p className="text-gray-600">{product.rating ?? 0} отзывов</p>
+            </div>
             <div className="flex justify-between gap-3 text-red-600 font-bold">
               <p>Добавить в сравнение</p>
               <p>Добавить в избранное</p>

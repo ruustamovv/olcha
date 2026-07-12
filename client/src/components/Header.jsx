@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Directory from "./Directory"
 import Search from "./Search"
 import { Link } from "react-router"
@@ -19,7 +19,7 @@ function Header() {
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  }, [])
+  }, [isMobile])
 
   useEffect(() => {
     if (!isMobile) {

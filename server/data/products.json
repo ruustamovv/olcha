@@ -19,8 +19,9 @@
     "old_price": 21999000,
     "price": 17499000,
     "brand": "Apple",
+    "type": "Phones",
     "memory": "8/256gb",
-    "rating": null
+    "rating": 20
   },
   {
     "name": "Xiaomi 15 Ultra 16GB / 512GB White",
@@ -29,8 +30,9 @@
     "old_price": 14999000,
     "price": 13699999,
     "brand": "Xiaomi",
+    "type": "Phones",
     "memory": "8/256gb",
-    "rating": null
+    "rating": 10
   },
   {
     "name": "Infinix GT 30 Pro 5G 12GB / 256GB",
@@ -39,6 +41,7 @@
     "old_price": 7499000,
     "price": 5499000,
     "brand": "Infinix",
+    "type": "Phones",
     "memory": "8/256gb",
     "rating": null
   },
@@ -49,6 +52,7 @@
     "old_price": 6999000,
     "price": 6499000,
     "brand": "Xiaomi",
+    "type": "Phones",
     "memory": "8/256gb",
     "rating": null
   },
@@ -59,6 +63,7 @@
     "old_price": 16999000,
     "price": 12999000,
     "brand": "Google",
+    "type": "Phones",
     "memory": "8/256gb",
     "rating": null
   },
@@ -69,6 +74,7 @@
     "old_price": 12999000,
     "price": 12699000,
     "brand": "OnePlus",
+    "type": "Phones",
     "memory": "8/256gb",
     "rating": null
   }
