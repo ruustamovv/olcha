@@ -1,7 +1,6 @@
 import { createContext, useState } from "react"
 
 export const FavouriteContext = createContext()
-
 export const FavouriteProvider = ({ children }) => {
   const [favourites, setFavourites] = useState([])
 
