@@ -5,83 +5,64 @@ import { ProductContext } from "../contexts/ProductContext"
 function Search() {
   const { searchValue, setSearchValue, searchSuggestions } =
     useContext(ProductContext)
-
   const [showSuggestions, setShowSuggestions] = useState(false)
-
   const searchRef = useRef(null)
 
   useEffect(() => {
-    const handleClick = (e) => {
+    const handleClickOutside = (e) => {
       if (searchRef.current && !searchRef.current.contains(e.target)) {
         setShowSuggestions(false)
       }
     }
-
-    document.addEventListener("mousedown", handleClick)
-
-    return () => document.removeEventListener("mousedown", handleClick)
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
   }, [])
 
   return (
-    <div className="relative" ref={searchRef}>
+    <div ref={searchRef} className="relative w-full">
       <input
-        className="bg-gray-200 transition-all duration-300 ease-in-out max-lg:py-1.5 w-full border-2 rounded-xl px-4 py-2.5 pr-10"
         type="text"
-        placeholder="Поиск по каталогу"
         value={searchValue}
+        placeholder="Поиск по каталогу"
         onFocus={() => setShowSuggestions(true)}
         onChange={(e) => {
           setSearchValue(e.target.value)
           setShowSuggestions(true)
         }}
+        className="bg-gray-200 transition-all duration-300 ease-in-out max-lg:py-1.5 w-full border-2 rounded-xl px-4 py-2.5 outline-none"
       />
-
-      {searchValue !== "" && (
-        <button
-          onClick={() => {
-            setSearchValue("")
-            setShowSuggestions(false)
-          }}
-          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-600 cursor-pointer"
-        >
-          ✕
-        </button>
-      )}
-
       <div
-        className={`absolute top-full left-0 mt-2 w-full bg-white rounded-xl shadow-xl overflow-hidden transition-all duration-300 z-50
-
-        ${
-          showSuggestions && searchSuggestions.length > 0 && searchValue !== ""
-            ? "opacity-100 translate-y-0 visible"
-            : "opacity-0 -translate-y-3 invisible"
-        }
-        `}
+        className={`absolute left-0 top-full mt-2 w-full bg-white rounded-2xl shadow-2xl overflow-hidden z-50 origin-top transition-all duration-300 ease-in-out ${
+          showSuggestions && searchSuggestions.length > 0
+            ? "opacity-100 translate-y-0 scale-y-100 visible"
+            : "opacity-0 -translate-y-3 scale-y-95 invisible"
+        }`}
       >
-        {searchSuggestions.map((product) => (
+        {searchSuggestions.map((product, index) => (
           <Link
             key={product._id}
             to={`/product/${product.unique_name}`}
-            onClick={() => setShowSuggestions(false)}
+            onClick={() => {
+              setSearchValue("")
+              setShowSuggestions(false)
+            }}
+            style={{
+              transitionDelay: `${index * 40}ms`,
+            }}
+            className="flex items-center gap-4 px-4 py-3 hover:bg-gray-100 transition-all duration-300 hover:pl-6"
           >
-            <div className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 transition-all duration-200">
-              <img
-                src={
-                  Array.isArray(product.image)
-                    ? product.image[0]
-                    : product.image
-                }
-                alt={product.name}
-                className="w-12 h-12 object-contain"
-              />
-
-              <div className="flex flex-col">
-                <p className="font-medium line-clamp-1">{product.name}</p>
-
-                <p className="text-red-600 font-semibold">
-                  {product.price.toLocaleString("ru-Ru")} сум
-                </p>
-              </div>
+            <img
+              src={product.image[0]}
+              alt={product.name}
+              className="w-14 h-14 object-contain"
+            />
+            <div className="flex-1">
+              <p className="line-clamp-1 font-medium">{product.name}</p>
+              <p className="text-red-600 font-semibold">
+                {product.price.toLocaleString("ru-RU")} сум
+              </p>
             </div>
           </Link>
         ))}

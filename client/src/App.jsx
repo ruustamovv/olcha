@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="pt-30 max-lg:pt-42 pb-10 container mx-auto transition-all duration-300 ease-in-out max-xl:max-w-7xl">
+      <main className="pt-30 px-5 max-lg:pt-42 pb-10 container mx-auto transition-all duration-300 ease-in-out max-xl:max-w-7xl">
         <Routes>
           {routes.map((route) => {
             return (

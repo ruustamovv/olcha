@@ -4,10 +4,13 @@ import Search from "./Search"
 import { Link } from "react-router"
 import colors from "../assets/colors/PrimaryColor"
 import BottomBar from "./BottomBar"
+import { useContext } from "react"
+import { CartContext } from "../contexts/CartContext"
 
 function Header() {
   const [showHeader, setShowHeader] = useState(true)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024)
+  const { totalItems } = useContext(CartContext)
 
   useEffect(() => {
     const handleResize = () => {
@@ -83,10 +86,15 @@ function Header() {
               Избранные
             </Link>
             <Link
-              className="transition-all duration-300 ease-in-out hover:text-red-600"
               to="/cart"
+              className="relative transition-all duration-300 hover:text-red-600"
             >
               Корзина
+              {totalItems > 0 && (
+                <span className="absolute -top-2 -right-4 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
             </Link>
             <Link
               className="transition-all duration-300 ease-in-out hover:text-red-600"

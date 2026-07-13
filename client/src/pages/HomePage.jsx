@@ -4,9 +4,11 @@ import colors from "../assets/colors/PrimaryColor"
 import CartIcon from "../assets/icons/CartIcon"
 import { Link } from "react-router"
 import { ProductContext } from "../contexts/ProductContext"
+import { CartContext } from "../contexts/CartContext"
 
 function Homepage() {
   const { filteredProducts } = useContext(ProductContext)
+  const { addToCart } = useContext(CartContext)
 
   if (filteredProducts === null) {
     return (
@@ -21,13 +23,11 @@ function Homepage() {
   return (
     <section>
       <Banner />
-
       <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10 gap-5">
         {filteredProducts.map((product) => {
           const discount = Math.round(
             ((product.old_price - product.price) / product.old_price) * 100,
           )
-
           return (
             <Link to={`/product/${product.unique_name}`} key={product._id}>
               <div className="cursor-pointer hover:scale-101 hover:shadow-2xl p-2 transition-all duration-400 ease-in-out flex flex-col h-full rounded-2xl gap-2">
@@ -91,8 +91,14 @@ function Homepage() {
                   сум х12 мес
                 </p>
 
-                <div className="z-10 flex justify-between gap-4 mt-2">
-                  <button className="group hover:border-red-600 transition-all duration-300 ease-in-out border-2 rounded-xl p-1 cursor-pointer">
+                <div className="flex justify-between gap-4 mt-2">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault()
+                      addToCart(product)
+                    }}
+                    className="group hover:border-red-600 transition-all duration-300 ease-in-out border-2 rounded-xl p-1 cursor-pointer"
+                  >
                     <CartIcon />
                   </button>
 

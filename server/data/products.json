@@ -4,7 +4,7 @@
     "unique_name": "apple-iphone-16-pro-max-256gb-natural-titanium",
     "image": [
       "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTfgjrQcqElbVAQ6khlrEcFe8IL0MdjDK49LDexqJ5C6IGIdsfLlG_xyE5QoV6-uy-MsE2fj2OXfb_4ciG1r-2KSgCZYs5xEdUI0pqRZoWb9bzJLzVp7QlQDPV8aW_mw3NVU2QPeVmuSVs&usqp=CAc",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1U68lRRORCno7Xj-DjAU-a9E-bjeaOZ7IQQlYBP-3Ow&s=10"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5WKgbnBHMvpUUeBMn5oxvZ1OVNIH67HsJ5rvLLsuPIw&s=10"
     ],
     "colors": [
       {
@@ -20,46 +20,98 @@
     "price": 17499000,
     "brand": "Apple",
     "type": "Phones",
-    "memory": "8/256gb",
+    "memory": "12/256gb",
     "rating": 22
   },
   {
     "name": "Xiaomi 15 Ultra 16GB / 512GB White",
     "unique_name": "xiaomi-15-ultra-16gb-512gb-white",
-    "image": "https://avatars.mds.yandex.net/get-mpic/20276372/2a0000019e4582b6e5913017bb9c09116e0c/orig",
+    "image": [
+      "https://avatars.mds.yandex.net/get-mpic/20276372/2a0000019e4582b6e5913017bb9c09116e0c/orig",
+      "https://mini-io-api.texnomart.uz/catalog/product/3583/358340/209258/78a1974b-47bc-4b78-80dd-c6628b7ac806.webp"
+    ],
+    "colors": [
+      {
+        "colorName": "silver",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_hEVep3oXmY2GYBmmObD1EZwgIt1tqDFhT56LSir6uZ-GcMkQVytspSaUBfLtEJDXdaPfMJZq_LBdP9Gi-pNXOZOpvXU7tDc1VsrX1cF9mPZUaWD4Oideau2JFVKfOzSgVBytjA&usqp=CAc"
+      },
+      {
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxaswcVP4dAc0PxlkrgWjVuBsMcUg9-WJjGD4uFlYKKYgzpfjSwGShP9W-EEEWUoNgSQt_Qr5Jhsr6d9zGRc9dSjI2tfaoUbK2DlUau0rAgmjg0eKSQfdjpe1YWT9W_9Hxk9h6_K0&usqp=CAc"
+      }
+    ],
     "old_price": 14999000,
     "price": 13699999,
     "brand": "Xiaomi",
     "type": "Phones",
-    "memory": "8/256gb",
+    "memory": "16/512gb",
     "rating": 10
   },
   {
     "name": "Infinix GT 30 Pro 5G 12GB / 256GB",
     "unique_name": "infinix-gt-30-pro-5g-12gb-256gb",
-    "image": "https://s3.fortifai.uz/shop/moderation/partner-1316/1778161644-1752166415-d0ndsngn274j5scntd40.jpg",
+    "image": [
+      "https://s3.fortifai.uz/shop/moderation/partner-1316/1778161644-1752166415-d0ndsngn274j5scntd40.jpg",
+      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRigrwy71f27VGy9sKU2ghFGjeHoYh80sWRuoFqIuVRFRu1fJaGfPN-46fVKI7QHjO7U7K__LWvBGVD73VbYzF14cVbftN-8OPF2opCjo0JEURUDWsbosG4w-jkaFY7EYLfASkYqxc&usqp=CAc"
+    ],
+    "colors": [
+      {
+        "colorName": "silver",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_hEVep3oXmY2GYBmmObD1EZwgIt1tqDFhT56LSir6uZ-GcMkQVytspSaUBfLtEJDXdaPfMJZq_LBdP9Gi-pNXOZOpvXU7tDc1VsrX1cF9mPZUaWD4Oideau2JFVKfOzSgVBytjA&usqp=CAc"
+      },
+      {
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxaswcVP4dAc0PxlkrgWjVuBsMcUg9-WJjGD4uFlYKKYgzpfjSwGShP9W-EEEWUoNgSQt_Qr5Jhsr6d9zGRc9dSjI2tfaoUbK2DlUau0rAgmjg0eKSQfdjpe1YWT9W_9Hxk9h6_K0&usqp=CAc"
+      }
+    ],
     "old_price": 7499000,
     "price": 5499000,
     "brand": "Infinix",
-    "type": "tvs",
-    "memory": "8/256gb",
+    "type": "Phones",
+    "memory": "12/256gb",
     "rating": 23
   },
   {
     "name": "Redmi Note 14 Pro Plus 5G 12GB / 512GB",
     "unique_name": "redmi-note-14-pro-plus-5g-12gb-512gb",
-    "image": "https://mini-io-api.texnomart.uz/catalog/product/3582/358250/208748/936726c3-6a03-4128-9647-645bd4eaf402.webp",
+    "image": [
+      "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR-h3Sfu3PBhtQwLOJcRRR_7_xMsTEE8KMvd5XCF8I2WMEchlHd0lT10GGRxJTAFEtJ20WZJGraStyHFDT2GYhog8iymKBY70J48_M89cAkaJ2MYCPRh5HUtQ6ew0yqZ2v7r3czqQ&usqp=CAc",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksacl0DYZiD5O-XeH-ay0sFzkV3JKjFpxem-KAIjHtQ&s=10"
+    ],
+    "colors": [
+      {
+        "colorName": "silver",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_hEVep3oXmY2GYBmmObD1EZwgIt1tqDFhT56LSir6uZ-GcMkQVytspSaUBfLtEJDXdaPfMJZq_LBdP9Gi-pNXOZOpvXU7tDc1VsrX1cF9mPZUaWD4Oideau2JFVKfOzSgVBytjA&usqp=CAc"
+      },
+      {
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxaswcVP4dAc0PxlkrgWjVuBsMcUg9-WJjGD4uFlYKKYgzpfjSwGShP9W-EEEWUoNgSQt_Qr5Jhsr6d9zGRc9dSjI2tfaoUbK2DlUau0rAgmjg0eKSQfdjpe1YWT9W_9Hxk9h6_K0&usqp=CAc"
+      }
+    ],
     "old_price": 6999000,
     "price": 6499000,
     "brand": "Xiaomi",
     "type": "Phones",
-    "memory": "8/256gb",
+    "memory": "12/512gb",
     "rating": 34
   },
   {
     "name": "Google Pixel 9 Pro XL 256GB Obsidian",
     "unique_name": "google-pixel-9-pro-xl-256gb-obsidian",
-    "image": "https://avatars.mds.yandex.net/get-mpic/10255013/2a00000194f10917d702581ac47b941efa0f/orig",
+    "image": [
+      "https://avatars.mds.yandex.net/get-mpic/10255013/2a00000194f10917d702581ac47b941efa0f/orig",
+      "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQoRLbZlxA-mGDq9Xo3TzNRJ0uUXCS1jjJLta8gACnnIUp4W8nSn4Og2OcFQurppRRYcrCCaGDN6LPJynA6QkBGIK8_WMyuFlzK-l9rF0LuonsYoO_6TWnzbJj4dDBMsujwBL7T4XzKEw&usqp=CAc"
+    ],
+    "colors": [
+      {
+        "colorName": "silver",
+        "colorImage": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQoRLbZlxA-mGDq9Xo3TzNRJ0uUXCS1jjJLta8gACnnIUp4W8nSn4Og2OcFQurppRRYcrCCaGDN6LPJynA6QkBGIK8_WMyuFlzK-l9rF0LuonsYoO_6TWnzbJj4dDBMsujwBL7T4XzKEw&usqp=CAc"
+      },
+      {
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxaswcVP4dAc0PxlkrgWjVuBsMcUg9-WJjGD4uFlYKKYgzpfjSwGShP9W-EEEWUoNgSQt_Qr5Jhsr6d9zGRc9dSjI2tfaoUbK2DlUau0rAgmjg0eKSQfdjpe1YWT9W_9Hxk9h6_K0&usqp=CAc"
+      }
+    ],
     "old_price": 16999000,
     "price": 12999000,
     "brand": "Google",
@@ -70,12 +122,49 @@
   {
     "name": "OnePlus 13 16GB / 512GB Black Eclipse",
     "unique_name": "oneplus-13-16gb-512gb-black-eclipse",
-    "image": "https://static.insales-cdn.com/r/-HxKA9aHokc/rs:fit:1000:0:1/q:100/plain/images/products/1/710/955679430/141722_photos_0_457038174.jpg@jpg",
+    "image": [
+      "https://static.insales-cdn.com/r/-HxKA9aHokc/rs:fit:1000:0:1/q:100/plain/images/products/1/710/955679430/141722_photos_0_457038174.jpg@jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR143TZj62xpAizf6lB6IQv4iTPNYTHoV1lwBawX3Q9yw&s=10"
+    ],
+    "colors": [
+      {
+        "colorName": "silver",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_hEVep3oXmY2GYBmmObD1EZwgIt1tqDFhT56LSir6uZ-GcMkQVytspSaUBfLtEJDXdaPfMJZq_LBdP9Gi-pNXOZOpvXU7tDc1VsrX1cF9mPZUaWD4Oideau2JFVKfOzSgVBytjA&usqp=CAc"
+      },
+      {
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxaswcVP4dAc0PxlkrgWjVuBsMcUg9-WJjGD4uFlYKKYgzpfjSwGShP9W-EEEWUoNgSQt_Qr5Jhsr6d9zGRc9dSjI2tfaoUbK2DlUau0rAgmjg0eKSQfdjpe1YWT9W_9Hxk9h6_K0&usqp=CAc"
+      }
+    ],
     "old_price": 12999000,
     "price": 12699000,
     "brand": "OnePlus",
     "type": "Phones",
-    "memory": "8/256gb",
+    "memory": "16/512gb",
     "rating": 13
+  },
+  {
+    "name": "ASUS TUF Gaming A15 FA506NCG Laptop, 15.6 FHD IPS 144Hz Display, AMD Ryzen 7 7445HS, 16GB RAM, 512GB SSD, GeForce RTX 3050 4GB GPU, English-Arabic K/B, Win11, Graphics Black | 90NR0JF7-M00H60",
+    "unique_name": "asus-tuf-gaming-a15-fa506ncg-laptop",
+    "image": [
+      "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLSKtkukN24f_66zsGkZgotJ77oIturFZiWjIAeecAo5-RvN28spTWuRom6JSPN2yddiVAkklEqtlabQ-OYaBq3vW2SPPbRcQ81qI-x7z9BilmU2o8STWucGzvX-UuKg&usqp=CAc",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU793EBh7fTjBNBWW-gs-FVTSAB9MgFXhIl_PFZbfoFA&s=10"
+    ],
+    "colors": [
+      {
+        "colorName": "black titanium",
+        "colorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU793EBh7fTjBNBWW-gs-FVTSAB9MgFXhIl_PFZbfoFA&s=1"
+      },
+      {
+        "colorName": "gold titanium",
+        "colorImage": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLSKtkukN24f_66zsGkZgotJ77oIturFZiWjIAeecAo5-RvN28spTWuRom6JSPN2yddiVAkklEqtlabQ-OYaBq3vW2SPPbRcQ81qI-x7z9BilmU2o8STWucGzvX-UuKg&usqp=CAc"
+      }
+    ],
+    "old_price": 15999000,
+    "price": 12699000,
+    "brand": "Asus",
+    "type": "Laptops",
+    "memory": "16/512gb",
+    "rating": 99
   }
 ]
